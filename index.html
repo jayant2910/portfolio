@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jayant Yadav | Portfolio</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      scroll-behavior: smooth;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      background: linear-gradient(to bottom, #000000, #0f2027);
+    }
+
+    header {
+      padding: 2rem;
+      text-align: center;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #00d4ff;
+    }
+
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #00d4ff;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: rgba(0, 0, 0, 0.7);
+      margin-bottom: 2rem;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #ccc;
+    }
+
+    a {
+      color: #00d4ff;
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header>
+    <h1>Jayant Yadav</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm a Computer Science Engineering student at Dronacharya College of Engineering, focused on IoT. Passionate about smart systems and web development.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Smart Car (ESP32 + L298N):</strong> Remote-controlled car with browser-based UI.</li>
+      <li><strong>Portfolio Website:</strong> Created using HTML, CSS, and JavaScript.</li>
+      <li><strong>IoT Monitoring System:</strong> Built using sensors and ESP32 for real-time data.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: neon82587@gmail.com</p>
+    <p>GitHub: <a href="https://github.com/jayant2910" target="_blank">github.com/jayant2910</a></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Jayant Yadav | Dronacharya CSE (IoT)
+  </footer>
+
+  <!-- Load Particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      "particles": {
+        "number": {
+          "value": 100,
+          "density": { "enable": true, "value_area": 1000 }
+        },
+        "color": { "value": "#00d4ff" },
+        "shape": { "type": "circle" },
+        "opacity": {
+          "value": 0.7,
+          "random": true
+        },
+        "size": {
+          "value": 6,
+          "random": true
+        },
+        "line_linked": {
+          "enable": true,
+          "distance": 150,
+          "color": "#00d4ff",
+          "opacity": 0.6,
+          "width": 1
+        },
+        "move": {
+          "enable": true,
+          "speed": 3
+        }
+      },
+      "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+          "onhover": { "enable": true, "mode": "grab" }
+        },
+        "modes": {
+          "grab": { "distance": 200, "line_linked": { "opacity": 0.5 } }
+        }
+      },
+      "retina_detect": true
+    });
+  </script>
+</body>
+</html>
